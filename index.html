@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUEFLY</title>
+<!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<style>
+    body{
+        background-color: rgb(255,255,255);
+    }
+    #parent{
+        display: flex;
+        flex-direction:flex-end;
+        margin-left: 470px;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    #parent1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    }
+    #parent1 div{
+        margin: 10px;
+        zoom: 130%;
+    }
+
+    #header{
+        display: grid;
+         grid-template-columns:110px 80px 120px 130px 150px 250px 150px  80px 150px;
+         grid-template-rows:35px;
+         margin-top: -10px;
+         font-size: 15px;
+         margin-left: 50px;
+         
+        }
+    a{
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        color: black;
+    }
+    #clear{
+        text-align: center;
+        font-size: 17px;
+    }
+    #clear~div{
+        background-color: black;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 200px 300px 400px;
+        margin-top: 500px;
+        background-color: rgb(230,230,230);
+    }
+    #btmside div{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    input{
+        width: 270px;
+        color: grey;
+    }
+
+
+</style>
+</head>
+<body>
+    <div id="parent">
+    <div><img src="https://www.bluefly.com/cdn/shop/files/BLUEFLY-LOGO-11-20.png?v=1613183141" ; width="200px"></div>
+    <div id="parent1">
+    <div> <i class="bi bi-search"></i> &nbsp;SEARCH </div>
+    <div><i class="bi bi-person"></i> </div>
+    <div><i class="bi bi-heart"></i> </div>
+    <div><i class="bi bi-handbag"></i> </div>
+</div>
+</div>
+<div id="header">
+    <span>CLOTHING
+
+    </span>
+    <span>SHOES</span>
+    <a href=""><span>HANDBAGS</span></a>
+    <a href=""><span>DESIGNERS</span></a>
+    <a href=""><span>SUNGLASSES</span></a>
+    <a href=""><span>JEWELLERY &nbsp; & &nbsp;WATCHES</span></a>
+     <a href=""><span>ACCESSORIES</span></a>
+     <a href=""><span>HOME</span></a>  
+     <a href=""><span>UNDER $50</span> </a> 
+</div>
+<div id="clear" > <a style="color: red";href=""><span>CLEARANCE</span></a> 
+</div>
+ <div>WELCOME TO BLUEFLY : <span>&nbsp; Luxurious brand at discounted prices </span></div>
+       
+      <footer id="btmside">
+            <div class="child">
+                <h2>ABOUT US</h2>
+                <div>Contact Us</div>
+                <div>Frequently Asked Questions</div>
+                <div>Shipping & Returns</div>
+                <div>PreOwned Guides</div>
+                <div>Sell on BlueFly</div>
+            </div>
+            <div class="child">
+                <div>Privacy Policy</div>
+                <div>Terms & Conditions</div>
+                <div>Do Sell My Personal Information</div>
+                <div>Shop Pay Installments</div>
+            </div>
+            <div class="child">
+                <div>SIGN UP & SAVE</div>
+                <div>Subscribe to get exclusive offer on Designer brands</div>
+                <div><input type="Email" value="Enter your email" required>
+                    <button style="width: 270px;background-color: black; color: white;margin-top: 10px;">Subscribe</button></div>
+                <div><span class="bi bi-instagram"></span><span class="bi bi-facebook" style="margin-left: 15px;"></span></div>
+                <div><img src="https://www.bluefly.com/cdn/shop/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" width="70%"></div>
+            </div>
+        </footer>
+</body>
+</html>
