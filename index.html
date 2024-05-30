@@ -26,17 +26,15 @@
     }
     #parent1 div{
         margin: 10px;
-        zoom: 130%;
+        zoom: 120%;
     }
 
     #header{
         display: grid;
          grid-template-columns:110px 80px 120px 130px 150px 250px 150px  80px 150px;
-         grid-template-rows:35px;
+         grid-template-rows:30px;
          margin-top: -10px;
-         font-size: 15px;
-         margin-left: 50px;
-         
+         font-size: 15px;       
         }
     a{
         text-decoration: none;
@@ -48,20 +46,127 @@
         text-align: center;
         font-size: 17px;
     }
-    #clear~div{
+    #ann2{
         background-color: black;
         color: white;
         font-family: 'Times New Roman', Times, serif;
         font-size: 15px;
         text-align: center;
         padding: 10px;
-        margin-top: 20px;
+        margin-top: 25px;
     }
+
+    /* Card Design Css properties */
+
+    #card{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+     }
+    #card div:nth-child(1){
+        background-image: url(./Asset/card1.JPG);
+        background-size: cover;
+       
+    }
+    #card div:nth-child(2){
+        background-image: url(https://images.unsplash.com/photo-1630945386735-372fbe731e3f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fGdyZWVuJTIwYmFja2dyb3VuZCUyMGltYWdlcyUyMG1vZGVsfGVufDB8fDB8fHww);
+        background-size: cover;
+    }
+
+    #card div:nth-child(3){
+        background-image: url(./Asset/card3.JPG);
+        background-size: cover;
+    }
+
+    .cardin{
+        height: 450px;
+        width: 400px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10px;
+    }  
+    button{
+        padding: 8px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border: none;
+        font-size: 10px;
+       letter-spacing: .1cm;
+       margin-top: -10px;
+       }  
+    .q1{
+        color: white;
+        margin-top: 250px;
+        font-weight: bold;
+    }
+    .q2{
+        color: white;
+        margin-top: -8px;
+        font-weight: 1200;
+        margin-left: 20px;
+        zoom: 175%;
+
+    }
+    .q3{
+        color: white;
+        margin-top: -30px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+
+    /*  SHOP BY CATEGORY  */
+
+#category{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 20px;
+    text-align: center;
+}
+
+
+    /*slide 2nd CSS */
+
+
+
+
+
+
+        /*  New Arrival Section CSS */
+mark{
+    color: red;
+    background-color: white;
+}
+#arrv{
+    display: grid;
+    grid-template-columns: 700px 30px 30px;
+    margin-left: 450px;
+    margin-top: 30px;
+    letter-spacing: .02cm;
+}
+#arrv div>button{
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    zoom: 125%;
+    padding: 4px;
+}
+
+#slide{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 40px;
+}
+
+
+    
+    /*footer CSS--*/
 
     footer{
         display: grid;
         grid-template-columns: 200px 300px 400px;
-        margin-top: 500px;
+        margin-top: 100px;
         background-color: rgb(230,230,230);
     }
     #btmside div{
@@ -72,6 +177,37 @@
         width: 270px;
         color: grey;
     }
+                  #btmside div >h2{
+                        font-size: 15px;
+                        letter-spacing: .15cm;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight: 130;
+                        margin-left: 28px;
+                    }
+
+
+ input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: hsl(120, 16%, 4%);
+  color: white;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}       
+
+
 
 
 </style>
@@ -86,22 +222,148 @@
     <div><i class="bi bi-handbag"></i> </div>
 </div>
 </div>
-<div id="header">
-    <span>CLOTHING
+<nav id="header">
+<a href="Clothing.html" target="_top"><div>CLOTHING </div></a>
+   <a href="Shoes.html" target="_parent"><span>SHOES</span></a>
+    <a href="Handbag.html"><span>HANDBAGS</span></a>
+    <a href="Home.html"><span>DESIGNERS</span></a>
+    <a href="hover.html"><span>SUNGLASSES</span></a>
+    <a href="J&W.html"><span>JEWELLERY &nbsp; & &nbsp;WATCHES</span></a>
+     <a href="Acces.html"><span>ACCESSORIES</span></a>
+     <a href="Home.html"><span>HOME</span></a>  
+     <a href="Under.html"><span>UNDER $50</span> </a> 
+</div>
+<div id="clear" > <a style="color: red ;margin-left: 520px;" href="cleara.html"><span>CLEARANCE</span></a></div>
+</nav>
+ <div id="ann2">WELCOME TO BLUEFLY : <span>&nbsp; Luxurious brand at discounted prices </span></div>
+ <!--  SHOP BY CATEGORY -->
+ <div> 
+   <h3 style="margin-left: 530px;">SHOP BY CATEGORY</h3>
+ 
+<div id="category">
+    <div>
+        <img src="https://www.bluefly.com/cdn/shop/files/8073151__00002__1_360x.jpg?v=1716533520" height="55%" width="70%">
+<p>HANDBAGS</p>
+    </div>
+    <div>
+<img src="https://www.bluefly.com/cdn/shop/files/Sz9JJ1KEWEFoBhpNdANA4fGf792lX238-25_360x.jpg?v=1716731865" height="55%" width="70%" >  
+<p>PUMPS & HEELS</p>  </div>
+    <div>
+        <img src="https://www.bluefly.com/cdn/shop/files/1311460934_RLLZ_1_360x.jpg?v=1716906446" height="55%" width="70%">
+        <p> WOMEN'S SNEAKERS</p>
+    </div>
+    <div>
+        <img src="https://www.bluefly.com/cdn/shop/files/AY6mKdEZxzuXMqiXxF6x4BJu66z3tsl1-25_360x.jpg?v=1716762995" height="55%" width="70%">
+    <p>DRESSES</p>
+    </div>
+    <div>
+    <img src="https://www.bluefly.com/cdn/shop/files/SL181LOULO-30001643-027__21135__1_360x.jpg?v=1716751001" height="55%" width="70%">
+    <P>SUNGLASSES</P>
+</div>
+    <div>
+        <img src="https://www.bluefly.com/cdn/shop/files/2134217_1800x1800.jpg?v=1703695677" height="55%" width="70%">
+        <p>MEN'S SNEAKERS</p>
+    </div>
+    <div><img src="https://www.bluefly.com/cdn/shop/products/2023982_360x.jpg?v=1679941769" height="55%" width="70%">
+<p>MEN'S T-SHIRTS /</p>
+    </div>
+    <div>
+        <img src="https://www.bluefly.com/cdn/shop/files/4450678_360x.jpg?v=1706201315" height="55%" width="70%">
+        <p> WOMEN'S TOPS</p>
+    </div>
+    <div>
+        <img src="https://www.bluefly.com/cdn/shop/files/1411832104_RLLZ_1_360x.jpg?v=1713836647" height="55%" width="70%">
+        <p>WOMEN'S  DENIM </p>
+    </div>
+    <div>
+        <img src="https://www.bluefly.com/cdn/shop/files/1001429-1A0062-4J300__90006__1_360x.jpg?v=1715545675" height="55%" width="70%">
+        <p>JEWELRY</p>
+    </div>
 
-    </span>
-    <span>SHOES</span>
-    <a href=""><span>HANDBAGS</span></a>
-    <a href=""><span>DESIGNERS</span></a>
-    <a href=""><span>SUNGLASSES</span></a>
-    <a href=""><span>JEWELLERY &nbsp; & &nbsp;WATCHES</span></a>
-     <a href=""><span>ACCESSORIES</span></a>
-     <a href=""><span>HOME</span></a>  
-     <a href=""><span>UNDER $50</span> </a> 
 </div>
-<div id="clear" > <a style="color: red";href=""><span>CLEARANCE</span></a> 
 </div>
- <div>WELCOME TO BLUEFLY : <span>&nbsp; Luxurious brand at discounted prices </span></div>
+
+ <!--   Slide Section 2-->
+<!--   New Arrival Section  -->
+ <main id="arrv">
+    <div>    <h4 style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;font-weight: 400;">NEW ARRIVALS</h4>
+    </div>
+    <div>    <button >&lt;</button>    </div>
+    <div>    <button>&gt;</button>    </div>
+    </main>
+<section>
+    <div id="slide">
+        <div>
+            <img src="https://www.bluefly.com/cdn/shop/files/8073151__00002__1_360x.jpg?v=1716533520" height="55%" width="70%">
+            <p class="newa">BURBERRY WOMENS LOGO NYLON TOTE BAG</p>
+            <p><s>$1,050</s> $589.99 <mark>Save 44%</mark> </p>
+        </div>
+        <div>
+            <img src="https://www.bluefly.com/cdn/shop/files/SFPD00219__GOLD1__1_360x.jpg?v=1716439715" height="55%" width="70%">
+            <p class="newa">FERRAGAMO WOMENS GANCINO GOLD 27MM STRAP FASHION WATCH </p>
+            <p><s>$799.00</s> $437.99 <mark>Save 45%</mark> </p>
+        </div>
+        <div>
+            <img src="https://www.bluefly.com/cdn/shop/files/WB0861-VSF-P45__60010__1_360x.jpg?v=1716485117" height="55%" width="70%">
+            <p class="newa">VALENTINO WOMENS MEDIUM GRAINY CALFSKIN ROCKSTUD CROSSBODY BAG </p>
+            <p><s>$1,050</s> $589.99 <mark>Save 44%</mark> </p>
+
+        </div>
+        <div>
+            <img src="https://www.bluefly.com/cdn/shop/files/1313811661_RLLZ_1_360x.jpg?v=1716386592" height="55%" width="70%">
+            <p class="newa">FENDI MATCH LEATHER SNEAKER</p>
+            <p><s>$995.00</s> $763.99 <mark>Save 23%</mark> </p>
+
+        </div>
+        <div> <img src="https://www.bluefly.com/cdn/shop/files/1313811661_RLLZ_1_360x.jpg?v=1716386592" height="55%" width="70%">
+            <p class="newa">FENDI MATCH LEATHER SNEAKER</p>
+            <p><s>$995.00</s> $764.99 <mark>Save 23%</mark> </p>
+</div>
+    </div>
+</section>
+<section>
+ <div id="card">
+    <div class="cardin">
+        <h3 class="q1">TRENDING LUXURY STYLES</h3>
+        <h1 class="q2">UP TO 80% OFF</h1>
+        <P class="q3">Feature Designer : Burberry , Saint Laurent,</P>
+        <p class="q3" style="margin-top: -15px;">Gucci,Bottega Veneta,Ferragamo & more</P>
+        <button>SHOP LUXURY STYLES</button>
+    </div>
+    <div class="cardin">
+        <h3 class="q1">ON TREND DRESSES</h3>
+        <h1 class="q2">UP TO 65% OFF</h1>
+        <P class="q3">Featuring Adrianna Papell,Lauren Ralph</P>
+        <p class="q3" style="margin-top: -15px;"> Lauren & More</P>
+        <button>SHOP DRESSES</button>
+    </div>
+    <div class="cardin">
+        <h3 class="q1">DESIGNER BOUTIQUE</h3>
+        <h1 class="q2">UP TO 84% OFF</h1>
+        <p class="q3">Best-Selling Styles from: Gucci,Valentino, </p>
+        <p class="q3" style="margin-top: -15px;">Balenciaga,Stuart Weitzman & More</p>
+        <button>SHOP DESIGNER BOUTIQUE</button>
+    </div>
+    <div class="cardin">
+        <img src="https://www.bluefly.com/cdn/shop/files/denim_540x.jpg?v=1615204984" height="80%" width="90%">
+        <h1>UP TO 85% OFF THE DENIM SHOP FOR HIM & HER</h1>
+        <p>From Hudson Jeans, Joe's Jeans,J Brand & More</p>
+        <button>SHOP DENIM</button>
+    </div>
+    <div class="cardin">
+        <img src="https://www.bluefly.com/cdn/shop/files/shutterstock_1112754335-REV_360x.jpg?v=1656342184" height="80%" width="70%">
+        <h1>UP TO 90%  OFF TRENDING JUMPSUITS & ROMPERS</h1>
+        <p>Must-Haves From Halston,BCBGMAXAZRIA, Iro & More </p>
+        <button>SHOP JUMPSUITS</button>
+    </div>
+    <div class="cardin">
+        <img src="https://www.bluefly.com/cdn/shop/files/Tops_360x.jpg?v=1615206654" height="80%" width="70%">
+        <h1>UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES </h1>
+        <p>Shop Wallets, Belts, Hats, Sunglasses & More</p>
+        <button>SHOP WOMEN'S ACCESSORIES</button>
+    </div>
+ </div>
+</section>
        
       <footer id="btmside">
             <div class="child">
@@ -122,10 +384,13 @@
                 <div>SIGN UP & SAVE</div>
                 <div>Subscribe to get exclusive offer on Designer brands</div>
                 <div><input type="Email" value="Enter your email" required>
-                    <button style="width: 270px;background-color: black; color: white;margin-top: 10px;">Subscribe</button></div>
-                <div><span class="bi bi-instagram"></span><span class="bi bi-facebook" style="margin-left: 15px;"></span></div>
+                    <input type="submit" value="Subscribe">
+                    <div><span class="bi bi-instagram"></span><span class="bi bi-facebook" style="margin-left: 15px;"></span></div>
                 <div><img src="https://www.bluefly.com/cdn/shop/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" width="70%"></div>
+                <p style="font-family: 'Times New Roman', Times, serif; font-size: 10px; font-weight: 100;">© 2024 Bluefly BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</p>
+
             </div>
-        </footer>
+            </footer>
+
 </body>
 </html>
