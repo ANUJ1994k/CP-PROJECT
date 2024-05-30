@@ -35,10 +35,11 @@
 
     #header{
         display: grid;
-         grid-template-columns:110px 80px 120px 130px 150px 250px 150px  80px 150px;
-         grid-template-rows:30px;
-         margin-top: -10px;
-         font-size: 15px;       
+         grid-template-columns:90px 70px 105px 105px 110px 205px 120px 60px 120px 150px;
+         font-size: 12px; 
+         color: grey;    
+         justify-content: center;  
+         margin-top: -25px;
         }
     a{
         text-decoration: none;
@@ -57,7 +58,7 @@
         font-size: 15px;
         text-align: center;
         padding: 10px;
-        margin-top: 25px;
+        margin-top: 15px;
     }
 
     /*Carousal Design 1 */
@@ -279,8 +280,61 @@ input[type=submit] {
   font-weight: bold;
 }       
 
+@media screen and (min-width:1024) and (max-width:1440px){
+    #parent{
+        display: flex;
+    }
+    #parent1{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .item{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:768) and (max-width:1023px){
+    #header{
+        display: grid;
+         grid-template-columns:repeat(1,1fr);
+    }
+footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#slide{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#arrv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin-top:0px;
+  }
+  #category{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #recommended{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #recmnd{
+    display: grid;
+    grid-template-columns: 200px 30px 30px;
+  }
+  #card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+     }
 
 
+
+}
 
 </style>
 </head>
@@ -303,9 +357,8 @@ input[type=submit] {
     <a href="J&W.html"><span>JEWELLERY &nbsp; & &nbsp;WATCHES</span></a>
      <a href="Acces.html"><span>ACCESSORIES</span></a>
      <a href="Home.html"><span>HOME</span></a>  
-     <a href="Under.html"><span>UNDER $50</span> </a> 
-</div>
-<div id="clear" > <a style="color: red ;margin-left: 520px;" href="cleara.html"><span>CLEARANCE</span></a></div>
+     <a href="Under.html"><span>UNDER $50</span> </a></div>
+      <a style="color: red;" href="cleara.html"><span>CLEARANCE</span></a>
 </nav>
  <div id="ann2">WELCOME TO BLUEFLY : <span>&nbsp; Luxurious brand at discounted prices </span></div>
 <!-- Carousal design -->
@@ -419,7 +472,7 @@ input[type=submit] {
             <i class="bi bi-heart" style="position: absolute;"></i>
             <img src="https://www.bluefly.com/cdn/shop/files/4298073_1800x1800.jpg?v=1694067124" height="55%" width="70%">
             <p class="rewa">LACOSTE MEN'S ESSENTIALS 3 PACK 100% COTTON SLIM FIT CREW NECK T-SHIRTS WHITE</p>
-            <p><s>$42.00</s> </p>
+            <p>$42.00 </p>
         </div>
         <div>
             <i class="bi bi-heart" style="position: absolute;"></i>
